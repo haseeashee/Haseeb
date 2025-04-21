@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB TECHNOLOGY HASEEB MOHAMMED</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+        nav {
+            background-color: #002366;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffd700;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+        .content {
+            padding: 25px;
+        }
+        .section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #d4af37;
+            color: #002366;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .download-btn:hover {
+            background-color: #c9a227;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #bbb;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #004080;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #eaf0f6;
+        }
+        pre {
+            background-color: #fff8dc;
+            padding: 15px;
+            border-left: 5px solid #002366;
+            overflow-x: auto;
+        }
+        h1, h2, h3 {
+            color: #002366;
+        }
+        ul {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('syllabus')">Syllabus</a>
+    <a href="#" onclick="showSection('theory')">Theory Notes</a>
+    <a href="#" onclick="showSection('lab')">Lab Manuals</a>
+    <a href="#" onclick="showSection('references')">References</a>
+</nav>
+
+<div class="content">
+
+    <div id="home" class="section active">
+        <h1>WEB TECHNOLOGY HASEEB MOHAMMED</h1>
+        <h2>Course Overview</h2>
+        <p>Master modern web development techniques including frontend frameworks, backend services, and cloud deployment strategies.</p>
+        <h2>Chapters:</h2>
+        <ul>
+            <li>Module 1: INTRODUCTION TO WEB DEVELOPMENT</li>
+            <li>Module 2: HTML & CSS ADVANCED</li>
+            <li>Module 3: JAVASCRIPT & ES6 FEATURES</li>
+            <li>Module 4: CLIENT-SERVER COMMUNICATION</li>
+            <li>Module 5: EXPRESS.JS BACKEND</li>
+            <li>Module 6: MONGODB DATABASE HANDLING</li>
+            <li>Module 7: REACT.JS BASICS</li>
+            <li>Module 8: DEPLOYMENT WITH HEROKU & NETLIFY</li>
+            <li>Module 9: INTRODUCTION TO CLOUD SERVICES (AWS)</li>
+            <li>Module 10: WEB APPLICATION SECURITY</li>
+        </ul>
+        <h2>Benefits</h2>
+        <ul>
+            <li>Learn latest web technologies from scratch</li>
+            <li>Build interactive web applications</li>
+            <li>Master Database and API integration</li>
+            <li>Deploy live projects using cloud platforms</li>
+            <li>Understand Cybersecurity best practices</li>
+            <li>Improve career opportunities globally</li>
+            <li>Hands-on projects for practical exposure</li>
+            <li>Certificate of Achievement after completion</li>
+        </ul>
+    </div>
+
+    <div id="syllabus" class="section">
+        <h1>Syllabus</h1>
+        <p><strong>Prerequisite:</strong> Knowledge of basic programming, logic building, and internet usage.</p>
+        <h2>Course Objectives:</h2>
+        <ul>
+            <li>Develop dynamic and responsive web applications</li>
+            <li>Understand full-stack development architecture</li>
+            <li>Deploy scalable and secure applications</li>
+        </ul>
+        <table>
+            <tr>
+                <th>Module</th>
+                <th>Description</th>
+                <th>Hours</th>
+            </tr>
+            <tr>
+                <td>1. INTRODUCTION TO WEB DEVELOPMENT</td>
+                <td>History, Internet Concepts, Tools</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>2. HTML & CSS ADVANCED</td>
+                <td>HTML5, CSS3, Flexbox, Grid</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>3. JAVASCRIPT & ES6 FEATURES</td>
+                <td>Variables, Functions, Classes, Promises</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>4. CLIENT-SERVER COMMUNICATION</td>
+                <td>AJAX, Fetch API, HTTP Methods</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5. EXPRESS.JS BACKEND</td>
+                <td>Server setup, Routing, Middleware</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>6. MONGODB DATABASE HANDLING</td>
+                <td>CRUD Operations, Mongoose ODM</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>7. REACT.JS BASICS</td>
+                <td>Components, Props, State, Hooks</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>8. DEPLOYMENT WITH HEROKU & NETLIFY</td>
+                <td>Continuous Deployment, Hosting</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>9. INTRODUCTION TO CLOUD SERVICES (AWS)</td>
+                <td>Hosting static websites, EC2 Basics</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>10. WEB APPLICATION SECURITY</td>
+                <td>Authentication, HTTPS, Basic Encryption</td>
+                <td>5</td>
+            </tr>
+        </table>
+        <p><strong>Total:</strong> 50 Hours</p>
+    </div>
+
+    <div id="theory" class="section">
+        <h1>Theory Notes</h1>
+        <p>Access detailed Web Development Notes:</p>
+        <a class="download-btn" href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">Open Theory Notes</a>
+    </div>
+
+    <div id="lab" class="section">
+        <h1>Lab Manuals</h1>
+        <h3>Program 1: Create a Landing Page</h3>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Landing Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My Website!&lt;/h1&gt;
+    &lt;p&gt;Let's explore the web together.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+
+        <h3>Program 2: Contact Form using HTML</h3>
+        <pre>
+&lt;form&gt;
+    Name: &lt;input type="text"&gt;&lt;br&gt;
+    Email: &lt;input type="email"&gt;&lt;br&gt;
+    Message: &lt;textarea&gt;&lt;/textarea&gt;&lt;br&gt;
+    &lt;button type="submit"&gt;Send&lt;/button&gt;
+&lt;/form&gt;
+        </pre>
+    </div>
+
+    <div id="references" class="section">
+        <h1>References</h1>
+        <ul>
+            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools Tutorials</a></li>
+            <li><a href="https://react.dev/" target="_blank">React Official Site</a></li>
+            <li><a href="https://nodejs.org/en/" target="_blank">Node.js Documentation</a></li>
+            <li><a href="https://expressjs.com/" target="_blank">Express.js Official Docs</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+    function showSection(sectionId) {
+        var sections = document.getElementsByClassName('section');
+        for (var i = 0; i < sections.length; i++) {
+            sections[i].classList.remove('active');
+        }
+        document.getElementById(sectionId).classList.add('active');
+    }
+</script>
+
+</body>
+</html>
